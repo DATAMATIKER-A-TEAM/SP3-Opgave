@@ -1,7 +1,4 @@
-import javafx.application.Application;
-import javafx.stage.Stage;
-
-public class Main extends Application {
+public class Main {
 
 	public static void main(String[] args) {
 
@@ -12,10 +9,5 @@ public class Main extends Application {
 		Pizza pizza2 = new Pizza("Amerikaner", "tomatsauce, ost, oksefars og oregano", 53, true);
 		Pizza pizza3 = new Pizza("Cacciatore", "tomatsauce, ost, pepperoni og oregano", 57);
 		Pizza pizza4 = new Pizza("Carbona", "tomatsauce, ost, kødsauce, spaghetti, cocktailpølser og oregano", 63, true);
-	}
-
-	@Override
-	public void start(Stage primaryStage) {
-
 	}
 }
