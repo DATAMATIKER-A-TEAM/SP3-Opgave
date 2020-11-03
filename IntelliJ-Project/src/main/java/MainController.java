@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 public class MainController {
     public void runProgram() {
+        Scanner scanner = new Scanner(System.in);
 
     }
 
