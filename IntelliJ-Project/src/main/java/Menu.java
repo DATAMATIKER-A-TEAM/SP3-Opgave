@@ -1,7 +1,16 @@
-public class Menu {
-    private Pizza pizzas [];
+import java.util.ArrayList;
 
-    public Menu(int amount) {
-        this.pizzas = new Pizza [amount];
+public class Menu {
+    private ArrayList<Pizza> pizzas;
+
+    public Menu(ArrayList<Pizza> pizzas) {
+        this.pizzas = pizzas;
+    }
+
+    @Override
+    public String toString() {
+        return "Menu{" +
+                "pizzas=" + pizzas +
+                '}';
     }
 }
