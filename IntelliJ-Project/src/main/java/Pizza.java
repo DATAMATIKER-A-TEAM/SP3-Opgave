@@ -23,4 +23,13 @@ public class Pizza {
 	public static int getPizzaCounter() {
 		return pizzaCounter;
 	}
+
+	@Override
+	public String toString() {
+		String newPizza = "";
+		if(news) {
+			newPizza = "NYHED*";
+		}
+		return name + ':' + newPizza + ' ' +  components + ' ' + price ;
+	}
 }
