@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class Menu {
-    private List<Pizza> pizzas;
+    private final List<Pizza> pizzas;
 
     public Menu(List<Pizza> pizzas) {
         this.pizzas = pizzas;
@@ -9,13 +9,13 @@ public class Menu {
 
     @Override
     public String toString() {
-        String pizzaer = "";
+        StringBuilder pizzas = new StringBuilder();
         int counter = 0;
-        for(Pizza pizza:pizzas) {
+        for(Pizza pizza: this.pizzas) {
             counter++;
-            pizzaer += counter + ". " + pizza.toString() + '\n';
+            pizzas.append(counter).append(". ").append(pizza.toString()).append('\n');
         }
 
-        return "Menu:\n" + pizzaer;
+        return "Menu:\n" + pizzas;
     }
 }
