@@ -30,6 +30,6 @@ public class Pizza {
 		if(news) {
 			newPizza = "NYHED*";
 		}
-		return name + ':' + newPizza + ' ' +  components + ' ' + price ;
+		return name + ':' + newPizza + ' ' +  components + ' ' + price;
 	}
 }

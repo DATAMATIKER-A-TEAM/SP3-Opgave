@@ -9,8 +9,13 @@ public class Menu {
 
     @Override
     public String toString() {
-        return "Menu{" +
-                "pizzas=" + pizzas +
-                '}';
+        String pizzaer = "";
+        int counter = 0;
+        for(Pizza pizza:pizzas) {
+            counter++;
+            pizzaer += counter + ". " + pizza.toString() + '\n';
+        }
+
+        return "Menu:\n" + pizzaer;
     }
 }
