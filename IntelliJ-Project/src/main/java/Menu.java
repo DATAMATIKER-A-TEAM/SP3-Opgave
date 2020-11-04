@@ -7,6 +7,10 @@ public class Menu {
         this.pizzas = pizzas;
     }
 
+    public Pizza getPizza(int id) {
+        return pizzas.get(id);
+    }
+
     @Override
     public String toString() {
         StringBuilder pizzas = new StringBuilder();

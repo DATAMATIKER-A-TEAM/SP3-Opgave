@@ -3,15 +3,13 @@ import java.util.List;
 
 public class Orders {
 	private List<Pizza> orders = new ArrayList<>();
-	private final String customerName;
+	private final String customerName, number;
 	private int price = 0;
 
-	public Orders(String customerName) {
+	public Orders(String customerName, String number, List<Pizza> orders) {
 		this.customerName = customerName;
+		this.number = number;
+		this.orders = orders;
 	}
 
-	public void addPizza(Pizza pizza) {
-		orders.add(pizza);
-		price += pizza.getPrice();
-	}
 }
