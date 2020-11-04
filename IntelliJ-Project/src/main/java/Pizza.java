@@ -2,8 +2,9 @@ public class Pizza {
 	private final String name, components;
 	private final int price;
 	private final boolean news;
-	public static int counter = 0;
+	private static int counter = 0;
 	private int id;
+
 	public Pizza(String name, String components, int price, boolean news) {
 		this.name = name;
 		this.components = components;
@@ -22,12 +23,16 @@ public class Pizza {
 		this.id = counter;
 	}
 
+	public int getPrice() {
+		return price;
+	}
+
 	@Override
 	public String toString() {
 		String newPizza = "";
 		if(news) {
 			newPizza = "NYHED*";
 		}
-		return name + ':' + newPizza + ' ' +  components + ' ' + price;
+		return name + ':' + newPizza + ' ' +  components + " ... " + price + "DKK";
 	}
 }

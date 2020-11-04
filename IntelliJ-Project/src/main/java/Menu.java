@@ -1,9 +1,9 @@
-import java.util.ArrayList;
+import java.util.List;
 
 public class Menu {
-    private ArrayList<Pizza> pizzas;
+    private List<Pizza> pizzas;
 
-    public Menu(ArrayList<Pizza> pizzas) {
+    public Menu(List<Pizza> pizzas) {
         this.pizzas = pizzas;
     }
 

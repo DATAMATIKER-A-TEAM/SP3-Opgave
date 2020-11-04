@@ -10,6 +10,8 @@ public class MainController {
     public void runProgram() {
         running = true;
         while(running) {
+            showMenu();
+
             Scanner scanner = new Scanner(System.in);
             String userInput = scanner.nextLine();
 
@@ -22,13 +24,15 @@ public class MainController {
             case "1":
                 System.out.println(menu.toString());
                 break;
-            case "2": running = false; break;
+            case "2": break;
+            case "3": running = false; break;
             default: System.out.println("Unknown command"); break;
         }
     }
 
-    public void showMenu() {
+    private void showMenu() {
         System.out.println("1) Show Menu");
-        System.out.println("2) Quit");
+        System.out.println("2) Opret Bestilling");
+        System.out.println("3) Quit");
     }
 }

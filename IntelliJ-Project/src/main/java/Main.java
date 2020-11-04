@@ -1,15 +1,15 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 	private static MainController controller;
 	public static void main(String[] args) {
 		initiatePizza();
-		controller.showMenu();
 		controller.runProgram();
 	}
 
 	private static void initiatePizza() {
-		ArrayList<Pizza> pizzas = new ArrayList<>();
+		List<Pizza> pizzas = new ArrayList<>();
 		Menu menu;
 
 		pizzas.add(new Pizza("Vesuvio", "tomatsauce, ost, skinke og oregano", 57));
