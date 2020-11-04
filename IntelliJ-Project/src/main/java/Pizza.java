@@ -1,15 +1,13 @@
 public class Pizza {
-	private String name, components;
-	private int price;
-	private boolean news;
-	private static int pizzaCounter = 0;
+	private final String name, components;
+	private final int price;
+	private final boolean news;
 
 	public Pizza(String name, String components, int price, boolean news) {
 		this.name = name;
 		this.components = components;
 		this.price = price;
 		this.news = news;
-		pizzaCounter++;
 	}
 
 	public Pizza(String name, String components, int price) {
@@ -17,11 +15,6 @@ public class Pizza {
 		this.components = components;
 		this.price = price;
 		this.news = false;
-		pizzaCounter++;
-	}
-
-	public static int getPizzaCounter() {
-		return pizzaCounter;
 	}
 
 	@Override

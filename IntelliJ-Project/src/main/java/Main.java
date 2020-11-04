@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 
 public class Main {
-	private static Menu menu;
-	private static MainController controller = new MainController();
+	private static MainController controller;
 	public static void main(String[] args) {
 		initiatePizza();
 		controller.showMenu();
@@ -10,7 +9,9 @@ public class Main {
 	}
 
 	private static void initiatePizza() {
-		ArrayList<Pizza> pizzas = new ArrayList<Pizza>();
+		ArrayList<Pizza> pizzas = new ArrayList<>();
+		Menu menu;
+
 		pizzas.add(new Pizza("Vesuvio", "tomatsauce, ost, skinke og oregano", 57));
 		pizzas.add(new Pizza("Amerikaner", "tomatsauce, ost, oksefars og oregano", 53, true));
 		pizzas.add(new Pizza("Cacciatore", "tomatsauce, ost, pepperoni og oregano", 57));
@@ -27,6 +28,6 @@ public class Main {
 		pizzas.add(new Pizza("Mafia", "tomatsauce, ost, pepperoni, bacon, løg og oregano", 61));
 
 		menu = new Menu(pizzas);
-
+		controller = new MainController(menu);
 	}
 }
