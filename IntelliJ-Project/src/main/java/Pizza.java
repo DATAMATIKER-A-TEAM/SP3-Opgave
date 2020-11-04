@@ -2,12 +2,15 @@ public class Pizza {
 	private final String name, components;
 	private final int price;
 	private final boolean news;
-
+	public static int counter = 0;
+	private int id;
 	public Pizza(String name, String components, int price, boolean news) {
 		this.name = name;
 		this.components = components;
 		this.price = price;
 		this.news = news;
+		counter++;
+		this.id = counter;
 	}
 
 	public Pizza(String name, String components, int price) {
@@ -15,6 +18,8 @@ public class Pizza {
 		this.components = components;
 		this.price = price;
 		this.news = false;
+		counter++;
+		this.id = counter;
 	}
 
 	@Override
